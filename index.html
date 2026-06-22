@@ -3,132 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Once Upon a Beanstalk</title>
-    <!-- Tab Logo / Favicon -->
+    <title>Once Upon a Beanstalk | Plant Nursery Valdosta</title>
     <link rel="icon" type="image/png" href="logo.png">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-index: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background-color: #fcfbf7;
-            color: #2c3e2b;
-            line-height: 1.6;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 600px;
-            width: 100%;
-            background: #ffffff;
-            padding: 40px;
-            border-radius: 16px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-            text-align: center;
-            border: 1px solid #e6eedb;
-        }
-
-        .logo-placeholder {
-            font-size: 3rem;
-            margin-bottom: 15px;
-        }
-
-        h1 {
-            font-size: 2.2rem;
-            color: #1e351f;
-            margin-bottom: 10px;
-            font-weight: 600;
-        }
-
-        .rating {
-            color: #ffb800;
-            font-size: 1.2rem;
-            margin-bottom: 25px;
-            font-weight: bold;
-        }
-
-        .info-box {
-            background: #f4f8f0;
-            padding: 20px;
-            border-radius: 12px;
-            margin-bottom: 30px;
-            text-align: left;
-        }
-
-        .info-item {
-            margin-bottom: 12px;
-            font-size: 1.05rem;
-        }
-
-        .info-item:last-child {
-            margin-bottom: 0;
-        }
-
-        .label {
-            font-weight: bold;
-            color: #4a6b4c;
-        }
-
-        .btn {
-            display: inline-block;
-            background: #4a6b4c;
-            color: white;
-            padding: 12px 30px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: background 0.2s ease;
-        }
-
-        .btn:hover {
-            background: #385239;
-        }
-
-        footer {
-            margin-top: 40px;
-            font-size: 0.85rem;
-            color: #8a9a86;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        <div class="logo-placeholder">🌱</div>
-        <h1>Once Upon a Beanstalk</h1>
-        <div class="rating">★ 5.0 Google Rating</div>
-        
-        <div class="info-box">
-            <div class="info-item">
-                <span class="label">📞 Phone:</span> (220) 412-6308
+    <header>
+        <a href="logo.png" target="_blank" class="logo-link">
+            <div class="logo-container">
+                <img src="logo.png" alt="Once Upon a Beanstalk Logo" class="header-logo">
+                <span class="logo-text">Once Upon a Beanstalk</span>
             </div>
-            <div class="info-item">
-                <span class="label">📍 Location:</span> Valdosta, GA
-            </div>
-            <div class="info-item">
-                <span class="label">⏰ Hours:</span> Coming Soon / Call for Info
-            </div>
+        </a>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Valdosta's Premium Plant Nursery</h1>
+            <p>Rare varieties, healthy plants, and expert care advice.</p>
+            <a href="#contact" class="btn">Visit Us Today</a>
         </div>
+    </section>
 
-        <a href="tel:2204126308" class="btn">Call Us Now</a>
-    </div>
+    <section id="gallery" class="gallery">
+        <h2>Our Nursery</h2>
+        <div class="grid">
+            <div class="card"><img src="nursery1.png" alt="Storefront"></div>
+            <div class="card"><img src="plants1.png" alt="Plants shelf"></div>
+            <div class="card"><img src="plants2.png" alt="Rare plants"></div>
+        </div>
+    </section>
 
-    <footer>
-        &copy; 2026 Once Upon a Beanstalk. All rights reserved.
-    </footer>
+    <section id="contact" class="contact">
+        <h2>Visit Us</h2>
+        
+        <div id="store-status" class="status-badge">Checking hours...</div>
 
-    <script>
-        // Quick dynamic console confirmation to make sure everything loads clean
-        console.log("Once Upon a Beanstalk web layout initialized successfully.");
-    </script>
+        <div class="contact-details">
+            <p>📍 2149 Bemiss Rd Ste B, Valdosta, GA 31601</p>
+            <p>📞 (229) 412-6308</p>
+            <hr style="border: 0; height: 1px; background: #ccc; margin: 20px auto; width: 50%;">
+            <h3>Full Weekly Hours:</h3>
+            <p>📅 Thu: 12:00 PM - 5:00 PM</p>
+            <p>📅 Fri & Sat: 12:00 PM - 8:00 PM</p>
+            <p>📅 Sun - Wed: CLOSED</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>

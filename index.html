@@ -3,49 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Once Upon a Beanstalk | Valdosta, GA</title>
-    
-    <!-- Tab Logo / Favicon Link -->
+    <title>Once Upon a Beanstalk</title>
+    <!-- Tab Logo / Favicon -->
     <link rel="icon" type="image/png" href="logo.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-index: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-    <!-- Linking Your External CSS File -->
-    <link rel="stylesheet" href="style.css">
+        body {
+            background-color: #fcfbf7;
+            color: #2c3e2b;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            border: 1px solid #e6eedb;
+        }
+
+        .logo-placeholder {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: #1e351f;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .rating {
+            color: #ffb800;
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
+
+        .info-box {
+            background: #f4f8f0;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .info-item {
+            margin-bottom: 12px;
+            font-size: 1.05rem;
+        }
+
+        .info-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .label {
+            font-weight: bold;
+            color: #4a6b4c;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #4a6b4c;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.2s ease;
+        }
+
+        .btn:hover {
+            background: #385239;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 0.85rem;
+            color: #8a9a86;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Main Navigation Bar -->
-    <header>
-        <div class="brand">
-            <h1>Once Upon a Beanstalk</h1>
-            <span>main • Valdosta, GA</span>
-        </div>
-        <a href="tel:2294126308" class="header-phone">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57a1.02 1.02 0 0 0-1.02.24l-2.2 2.2a15.045 15.045 0 0 1-6.59-6.59l2.2-2.21a1 1 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/></svg>
-            (229) 412-6308
-        </a>
-    </header>
-
-    <!-- Main Display Section -->
-    <main>
-        <div class="showcase-card">
-            <div class="badge">
-                <span class="star">★</span> 5.0 Google Rating Verified
+    <div class="container">
+        <div class="logo-placeholder">🌱</div>
+        <h1>Once Upon a Beanstalk</h1>
+        <div class="rating">★ 5.0 Google Rating</div>
+        
+        <div class="info-box">
+            <div class="info-item">
+                <span class="label">📞 Phone:</span> (220) 412-6308
             </div>
-            <h2 class="hero-title">Your Local Plant & Boutique Destination</h2>
-            <p class="hero-subtitle">We are hard at work custom-building our complete digital shopping experience. Stay tuned for online ordering and gallery previews!</p>
-            
-            <div class="cta-group">
-                <a href="tel:2294126308" class="btn-primary">Call Shop Directly</a>
+            <div class="info-item">
+                <span class="label">📍 Location:</span> Valdosta, GA
+            </div>
+            <div class="info-item">
+                <span class="label">⏰ Hours:</span> Coming Soon / Call for Info
             </div>
         </div>
-    </main>
 
-    <!-- Static Footer Info -->
+        <a href="tel:2204126308" class="btn">Call Us Now</a>
+    </div>
+
     <footer>
-        <p>&copy; 2026 Once Upon a Beanstalk. All rights reserved. Locally Operated in Valdosta, Georgia.</p>
+        &copy; 2026 Once Upon a Beanstalk. All rights reserved.
     </footer>
 
-    <!-- Linking Your External JavaScript File -->
-    <script src="script.js"></script>
+    <script>
+        // Quick dynamic console confirmation to make sure everything loads clean
+        console.log("Once Upon a Beanstalk web layout initialized successfully.");
+    </script>
 </body>
 </html>

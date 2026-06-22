@@ -1,0 +1,234 @@
+/* ==========================================
+   1. Reset & Global Styles
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #2b2b2b;
+    line-height: 1.6;
+}
+
+/* ==========================================
+   2. Header & Navigation Menu
+   ========================================== */
+header {
+    background-color: #1b4332; /* Deep forest green */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Removes link decoration from the logo wrapper */
+.logo-link {
+    text-decoration: none;
+    color: white;
+}
+
+/* Flexbox container to keep logo image and text aligned */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Gap between the logo image and text */
+}
+
+/* Safely shrinks the 800x800 logo down to a clean header size */
+.header-logo {
+    height: 45px; 
+    width: auto;  
+    display: block;
+    border-radius: 4px;
+    transition: transform 0.2s ease;
+}
+
+/* Subtle pop effect when hovering over the clickable logo */
+.logo-link:hover .header-logo {
+    transform: scale(1.05);
+}
+
+.logo-text {
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+header nav a:hover {
+    color: #52b788; /* Light plant green highlight */
+}
+
+/* ==========================================
+   3. Hero Section (The Fixed Banner Area)
+   ========================================== */
+.hero {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('banner.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; 
+    
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+/* Call to Action Button */
+.btn {
+    display: inline-block;
+    background-color: #52b788; 
+    color: white;
+    padding: 14px 28px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 700;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #40916c;
+    transform: translateY(-2px);
+}
+
+/* ==========================================
+   4. Gallery & Content Sections
+   ========================================== */
+.gallery, .contact {
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.gallery h2, .contact h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+/* Subtle decorative line under section titles */
+.gallery h2::after, .contact h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #52b788;
+    margin: 10px auto 0 auto;
+}
+
+/* The Grid Container */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Individual Image Cards */
+.card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+/* ==========================================
+   5. Contact Info & Live Status Badge
+   ========================================== */
+.contact {
+    background-color: #edf2f0; /* Soft, light green background tint */
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.status-open {
+    background-color: #d8f3dc;
+    color: #1b4332;
+    border: 2px solid #52b788;
+}
+
+.status-closed {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 2px solid #f5c6cb;
+}
+
+.contact-details p {
+    font-size: 1.2rem;
+    margin: 15px 0;
+}
+
+.contact-details h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #1b4332;
+}
+
+/* ==========================================
+   6. Responsive Layout Mobile Tweaks
+   ========================================== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    header nav a {
+        margin: 0 10px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+}

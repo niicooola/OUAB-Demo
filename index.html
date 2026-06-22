@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Once Upon a Beanstalk | Plant Nursery Valdosta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <!-- Logo & Text Wrapper linked to open the image file in a new tab -->
+        <a href="logo.png" target="_blank" class="logo-link">
+            <div class="logo-container">
+                <img src="logo.png" alt="Once Upon a Beanstalk Logo" class="header-logo">
+                <span class="logo-text">Once Upon a Beanstalk</span>
+            </div>
+        </a>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Valdosta's Premium Plant Nursery</h1>
+            <p>Rare varieties, healthy plants, and expert care advice.</p>
+            <a href="#contact" class="btn">Visit Us Today</a>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <h2>Our Nursery</h2>
+        <div class="grid">
+            <div class="card"><img src="nursery1.png" alt="Storefront"></div>
+            <div class="card"><img src="plants1.png" alt="Plants shelf"></div>
+            <div class="card"><img src="plants2.png" alt="Rare plants"></div>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section id="contact" class="contact">
+        <h2>Visit Us</h2>
+        
+        <!-- Live Status Badge (Controlled by JavaScript) -->
+        <div id="store-status" class="status-badge">Checking hours...</div>
+
+        <div class="contact-details">
+            <p>📍 2149 Bemiss Rd Ste B, Valdosta, GA 31601</p>
+            <p>📞 (229) 412-6308</p>
+            <hr style="border: 0; height: 1px; background: #ccc; margin: 20px auto; width: 50%;">
+            <h3>Full Weekly Hours:</h3>
+            <p>📅 Thu: 12:00 PM - 5:00 PM</p>
+            <p>📅 Fri & Sat: 12:00 PM - 8:00 PM</p>
+            <p>📅 Sun - Wed: CLOSED</p>
+        </div>
+    </section>
+
+    <!-- Connects the JavaScript code logic -->
+    <script src="script.js"></script>
+</body>
+</html>
